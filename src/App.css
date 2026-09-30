@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'UbuntuBold';
+  src: url(../assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: 'UbuntuRegular';
+  src: url(../assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: 'UbuntuMedium';
+  src: url(../assets/fonts/Ubuntu-Medium.ttf);
+}
+
+.main{
+  background-color:rgb(223, 242, 249);
+  height:810px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 940px;
+  height: 600px;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 20px;
+  gap:5px;
+}
+
+.mainstepper{
+  width: 20%;
+  height: 90%;
+  min-width: 30%;
+  border-radius: 20px;
+  display: block;
+  background-image: url('./images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-position: left center;
+  /* margin: 2rem 2rem; */
+}
+
+.secondstepper{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height:90%;
+}
+.confirmwrapper{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options{
+  height: 260px;
+  width: 80%;
+  margin-top: 5px;
+
+}
+.nav{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  gap:10rem;
+}
+
+.confirm{
+  background-color:#928CFF;
+   align-self: self-end;
+  margin-right:10px;
+  margin-bottom:5px;
+  height:48px;
+  width:123px;
+  border: solid 2px;
+  border-radius: 8px;
+  color: white;
+  font-family: "UbuntuMedium";
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.next{
+  align-self: self-end;
+  margin-right:10px;
+  margin-bottom:5px;
+  min-height:48px;
+  min-width:123px;
+  border: solid 2px;
+  border-color: #022959;
+  border-radius: 8px;
+  background-color: #022959;
+  color: white;
+  font-family: "UbuntuMedium";
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.back{
+    align-self: last baseline;
+  margin-right:10px;
+  margin-bottom:5px;
+  min-height:30px;
+  min-width:90px;
+  padding-bottom: 5px;
+  color: #9699AA;
+  font-family:"UbuntuMedium";
+  font-size: 16px;
+  line-height: 1.2;
+  visibility: hidden;
+}
+.show{
+  visibility: visible;
+}
+.mainstepper > div{
+  margin: 1.5rem;
+  text-align: left;
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+
+}
+.mainstepper > div:second-child{
+  display:flex;
+  flex-direction: row;
+  width:1.4rem;
+  color:white;
+  text-align: center;
+  float:right;
+  margin-left: 10px;
+}
+
+.mainstepper > div> div> p{
+  color: white;
+   font-size: 16px;
+   margin-bottom:-5px;
+}
+
+.unselectedStepper{
+  width:1.6rem;
+  height: 1.6rem;
+  color:white;
+  text-align: center;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 20px;
+  float:left;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding-top: 2px;;
+}
+
+.selectedStepper{
+  width:1.6rem;
+  height: 1.6rem;
+  color:black;
+  text-align: center;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 20px;
+  float:left;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding-top: 2px;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .main{
+    max-width: 767px;
+    max-height: 810px;
+    width: 767px;
+    height: 810px;
+    margin:auto;
+  }
+  .stepper{
+    max-width: 686px;
+    max-height: 600px;
+  }
+
+    .mainstepper{
+      max-width: 206px;
+      max-height: 568px;
+  
+    }
+    .secondstepper{
+      max-width: 348px;
+      max-height: 557px;
+    }
+    .options{
+      width:348px;
+      max-width: 348px;
+      max-height: 393px;
+      margin-left:-30px;
+    }
+    .nav{
+      width: 100%;
+      gap: 8.5rem;
+    }
+    .next{
+      margin-right:0px;
+    }
+}
+
+@media (max-width: 767px) {
+  .main{
+    max-width: 375px;
+    max-height: 695px;
+    text-align: center;
+  }
+  .stepper{
+    max-width: 375px;
+    max-height: 172px;
+    background-image: url('./images/bg-sidebar-mobile.svg');
+
+  }
+
+    .mainstepper{
+      max-width: 375px;
+      max-height: 172px;
+  
+    }
+    .secondstepper{
+      max-width: 343px;
+      max-height: 390px;
+    }
+}

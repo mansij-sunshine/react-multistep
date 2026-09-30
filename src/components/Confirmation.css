@@ -1,0 +1,22 @@
+.confirmation>img{
+    max-width: 80px;
+    max-height: 80px;
+    width: 80px;
+    height:80px;
+
+}
+.confirmation> p:first-of-type{
+    font-family:"UbuntuBold";
+    font-size: 32px;
+    line-height: 1.2;
+    color: #022959;
+    text-align: center;
+    vertical-align: center;
+}
+
+.confirmation> p:nth-child(3){
+    font-family:"UbuntuRegular";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9699AA;
+}

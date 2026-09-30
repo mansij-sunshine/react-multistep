@@ -1,0 +1,96 @@
+.personalinfo{
+    width:100%;
+    height:100%;
+    margin-top:1rem;
+    text-align:center;
+    font-family: "UbuntuBold";
+    font-size: 32px;
+    line-height: 1.2;
+    
+}
+
+.personalinfo>div:first-child{
+    color:black;
+    font-weight: 700;
+    text-align: left;
+}
+.personalinfo>div:nth-child(2){
+    font-family: "UbuntuRegular";
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.personaldetails{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:0.5rem;
+
+    margin-top:1rem;
+}
+
+.personaldetails>p{
+    align-self:baseline;
+    font-weight: 400;
+    font-size: 14px;
+    color:black;
+    font-family: "UbuntuRegular";
+    line-height: 1.2;
+    
+}
+.personaldetails>input{
+    align-self:baseline;
+    margin-bottom:1rem;
+    width:90%;
+    border: solid 1px;
+    border-color: rgb(200, 196, 196);
+    border-radius:0.4rem;
+    box-sizing: border-box;
+    padding:10px;
+    font-family: "UbuntuMedium";
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.personaldetails>input.error{
+    border-color: red;
+}
+
+.errormsg{
+    color:red;
+}
+
+@media (max-width: 1024px) {
+
+    .personalinfo{
+  /* "Personal info" heading */
+    }
+    .personalinfo>div:nth-child(2){
+    
+    }
+
+    /* 24px gap between fields, inputs fill width */
+    .personaldetails{
+       
+    }
+    .personaldetails>input{
+  /* gap handles spacing now */
+    }
+}
+
+@media (max-width: 767px) {
+    .personalinfo{
+        
+    }
+    .personalinfo>div:nth-child(2){
+        
+    }
+    .personaldetails{
+      
+    }
+    .personaldetails>input{
+        
+    }
+}

@@ -1,0 +1,114 @@
+.title>p:first-child{
+    font-family: "UbuntuBold";
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.title>p:nth-child(2){
+    margin-top: 8px;
+    font-family: "UbuntuRegular";
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.summary{
+    height: 222px;
+    width: 450px;
+}
+.plan{
+    background-color: #F8F9FF ;
+    height: 170px;
+    width: 402px;
+    padding: 24px;
+}
+.plan>p:first-child{
+    font-family: "UbuntuMedium";
+    font-size: 16px;
+    line-height: 1.2;
+    color:#022959;
+    text-align: left;
+}
+.plan>p:nth-child(2){
+    font-family: "UbuntuBold";
+    font-size: 16px;
+    line-height: 2;
+    color: #022959;
+    text-align:right;
+}
+.plan>a:first-of-type{
+    display:block;
+    color:#483EFF;
+    text-align: left;
+    font-family: "UbuntuRegular";
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.plan>a:first-of-type:hover{
+    text-decoration: underline;
+}
+
+.plan>hr{
+    color:#9699AA;
+    width: 402px;
+}
+
+.addonslist{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 402px;
+    padding-bottom:16px;
+}
+.addonslist>span{
+font-family:"UbuntuRegular";
+    font-size: 14px;
+    line-height: 1.2;
+    color: #9699AA;
+}
+.totalamount{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "UbuntuRegular";
+    font-size: 14px;
+    line-height:1.2;
+    color: #9699AA;
+    width: 402px;
+    padding:20px;
+}
+.totalamount>span:nth-child(2){
+    color: #483EFF;
+    font-family: "UbuntuBold";
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+@media (max-width:1024px){
+.summary{
+    width: 320px;
+    max-width: 320px;
+}
+.plan{
+    width: 320px;
+    max-width: 320px;
+}
+.plan > hr{
+        width: 320px;
+    max-width: 320px;
+}
+.addonslist{
+            width: 320px;
+    max-width: 320px;
+}
+.totalamount{
+     width: 320px;
+    max-width: 320px;
+}
+.plan>p:nth-child(2){
+    max-height: 20px;
+    height:20px;
+}
+}

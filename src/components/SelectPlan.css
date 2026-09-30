@@ -1,0 +1,198 @@
+.selectplan>div:first-child{
+    font-family: "UbuntuBold";
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.selectplan>div:nth-child(2){
+    font-family: "UbuntuRegular";
+    font-size: 16px;
+    line-height: 1.5;
+     text-align: left;
+     margin-top: 10px;
+}
+.mainplan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 350px;
+}
+
+.planoptions{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:450px;
+    height: 160px;
+}
+
+.planoptions>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:0;
+    align-items:flex-start;
+    opacity: 100%;
+    background-color: #fff;
+    width:138px;
+    height:160px;
+    border: solid 1px;
+    border-color: grey;
+    border-radius: 8px;
+}
+.planoptions>div.selected{
+    background-color: #F8F9FF;
+    border-color: #483EFF ;
+}
+
+.planoptions>div:focus{
+    background-color: #F8F9FF;
+    border-color: #483EFF ;
+}
+.planoptions>div:hover{
+     border-color: #483EFF ;
+}
+.planoptions>div>img{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.planoptions>div>span:nth-child(2){
+    font-family: "UbuntuMedium";
+    font-size: 16px;
+    line-height: 1.2;
+    padding-left:10px;
+    margin-top: 20%;
+}
+.planoptions>div>span:nth-child(3){
+    font-family: "UbuntuRegular";
+    font-size: 14px;
+    line-height: 1.2;
+    color:#9699AA;
+    padding-left:10px;
+}
+
+.planoptions>div>span:nth-child(4){
+    font-family: "UbuntuRegular";
+    font-size: 12px;
+    line-height: 1.2;
+    color:#022959;
+    padding-left:10px;
+    visibility: hidden;
+}
+.planoptions>div>span:nth-child(4).show{
+    visibility: visible;
+}
+
+.switch{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin:10px;
+}
+
+.checkbox{
+display: none;
+}
+
+.label{
+    display: inline-block;
+    transition: background-color 0.3s;
+    background-color: black;
+    position:relative;
+    height: 15px;
+    width: 28px;  
+    cursor: pointer;
+    border-radius:20px;
+}
+
+.label::before{
+    content:"";
+    float:left;
+    width:50%;
+background-color: black;
+}
+
+.label::after{
+    content: "";
+    position:absolute;
+    width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.checkbox:checked + .label::after {
+  transform: translateX(14px);
+}
+
+.toggle{
+    display:inline;
+    background-color: #F8F9FF;
+    font-family: "UbuntuBold";
+    font-size: 14px;
+    line-height: 1.2;
+    color:#9699AA;
+}
+.toggleSelected{
+    display:inline;
+    color:#022959;
+}
+
+@media(max-width:1024px){
+    .planoptions{
+        width:348px;
+        height: 256px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    .planoptions>div{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width:348px;
+        max-width:348px;
+        max-height: 65px;
+    }
+    .planoptions>div>img{
+        width: 40px;
+        height: 40px;
+        margin-top:10px;
+        padding-left: 16px;
+        padding-top: 1px;
+}
+    .planoptions>div>span:nth-child(2){
+        margin-top:10px;
+        margin-left:13px;
+        padding-left:0px;
+        flex-grow:1;
+        text-align:left;
+    }
+    .planoptions>div>span:nth-child(3){
+        padding:0px;
+        flex-basis:100%;
+        order:1;
+        margin-left: 70px;         
+        margin-top: -25px;    
+        text-align: left; 
+    }
+    .planoptions>div>span:nth-child(4){
+        margin-right: 8px;
+        align-self:center
+
+}
+.mainplan{
+    max-width: 348px;
+    max-height: 430px;
+    width: 348px;
+    height: 430px;
+}
+}

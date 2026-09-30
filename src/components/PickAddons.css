@@ -1,0 +1,96 @@
+.title>p:first-child{
+    font-family: "UbuntuBold";
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: left;
+    color: #022959;
+}
+
+.title>p:nth-child(2){
+    font-family: "UbuntuRegular";
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: left;
+    color: #9699AA;
+}
+
+.addons{
+       width:450px;
+    height:275px;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.addonOptions{
+ height:81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      border: 1px solid;
+    border-color:#D6D9E6;
+    border-radius: 8px;
+    margin-top:1rem;
+}
+
+.addonOptions>input[type="checkbox"]{
+    display:inline;
+    color:#D6D9E6;
+    width: 20px;
+    height:20px;
+    margin-left:1.5rem;
+}
+
+.addonOptions>input[type="checkbox"]:checked{
+    background-color: #483EFF;
+}
+
+.addonOptions:hover{
+    border-color: #483EFF;
+}
+
+.addonOptions>div>p:first-child{
+    font-family: "UbuntuMedium";
+    font-size:16px;
+    color: #022959;
+    text-align: left;
+}
+
+.addonOptions>div>p:nth-child(2){
+    font-family: "UbuntuRegular";
+    font-size:14px;
+    color: #9699AA;
+    text-align: left;
+}
+.addonOptions>div{
+    line-height:1.2;
+    width:191px;
+}
+.addonOptions > span{
+    margin-right:1.5rem;
+}
+.addonOptions.selected{
+     height:81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      border: 1px solid;
+    border-radius: 8px;
+    background-color: #F8F9FF;
+    border-color:#483EFF;
+}
+
+
+@media(max-width:1024px){
+    .addonOptions{
+        max-width: 348px;
+        width:348px;
+               margin:auto;
+    }
+    .addons{
+        max-width: 348px;
+        width:348px;
+ 
+    }
+
+}
