@@ -1,7 +1,6 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import "./PickAddons.css"
 
-import type {addonstype} from './types'
 import {AddOns} from './constants'
 import { UserContext } from "./UserContext";
 

@@ -20,8 +20,8 @@ export type planOptionsType = {
         id: number,
         name: string,
         pimg: string,
-        mprice?: number,
-        yprice? : number,
+        mprice: number,
+        yprice : number,
         free? : string,
     }
 

@@ -11,7 +11,7 @@ const Summary = () =>{
     if (!selectedPlan) {
         return <div>No plan selected.</div>;
     }
-    const planPrice = selectedPlan? (isYearly?selectedPlan.yprice:selectedPlan.mprice):0;
+    const planPrice = selectedPlan? (isYearly?selectedPlan.yprice!:selectedPlan.mprice!):0;
 
     const selectedAddOns= AddOns.filter((addon)=>userDetails.addOnChoice.includes(addon.id))
     console.log('selected addons',selectedAddOns)

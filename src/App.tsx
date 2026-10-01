@@ -9,7 +9,6 @@ import Confirmation from './components/Confirmation'
 import {UserContext} from './components/UserContext'
 
 import * as types from './components/types'
-import { planOptions } from './components/constants'
 
 function App() {
   const [stepNumber, setStepNumber] = useState(1)
@@ -155,4 +154,3 @@ const [validationError, setValidationError] = useState<types.validationErrorType
 }
 
 export default App
-export type {userDetailsType} 

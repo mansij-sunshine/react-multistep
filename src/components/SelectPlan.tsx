@@ -1,5 +1,5 @@
 
-import { useState,useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import './SelectPlan.css';
 import { UserContext } from "./UserContext";

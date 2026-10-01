@@ -129,15 +129,7 @@
   flex: 1;
 
 }
-.mainstepper > div:second-child{
-  display:flex;
-  flex-direction: row;
-  width:1.4rem;
-  color:white;
-  text-align: center;
-  float:right;
-  margin-left: 10px;
-}
+
 
 .mainstepper > div> div> p{
   color: white;
