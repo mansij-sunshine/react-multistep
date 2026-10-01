@@ -1,4 +1,4 @@
-# Multi-Step Form - Frontend Mentor Challenge
+# Multi-Step Form 
 
 A fully-functional, type-safe multi-step form built with React, TypeScript, and Vite. Users can complete a 4-step subscription flow: personal information → plan selection → add-ons selection → order review.
 
@@ -130,7 +130,7 @@ Provides global state management using React Context. Holds:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/mansij-sunshine
 
 ## License
 
