@@ -114,12 +114,6 @@ Provides global state management using React Context. Holds:
 **Challenge**: Managing form state across multiple steps
 - **Solution**: Used React Context API to centralize state, avoiding prop drilling
 
-**Challenge**: TypeScript type safety for optional object properties
-- **Solution**: Properly defined optional types in `types.ts` and fixed undefined checks
-
-**Challenge**: CSS selector syntax errors
-- **Solution**: Replaced invalid `:second-child` pseudo-selector with `:nth-child(2)`
-
 ## Future Improvements
 
 - Add backend integration for form submission
