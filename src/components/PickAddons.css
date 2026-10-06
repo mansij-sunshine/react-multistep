@@ -15,9 +15,9 @@
 }
 
 .addons{
-       width:450px;
+    width:450px;
     height:275px;
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -93,4 +93,31 @@
  
     }
 
+}
+
+@media (max-width: 767px){
+    .title{
+        width:70vw;
+    }
+    .title>p:first-child {
+        font-size: 24px;
+    }
+    .addons{
+        height: auto;
+        max-height: none;
+        min-height: 40vh;
+        justify-content: space-evenly;
+    }
+    .addonOptions{
+        min-width: 50vw;
+        width: auto;
+        max-width: 80vw;
+        margin: 0;
+    }
+    .addonOptions>input[type="checkbox"] {
+        margin-left: 1rem;
+    }
+    .addonOptions > span {
+        margin-right: 0.5rem;
+    }
 }

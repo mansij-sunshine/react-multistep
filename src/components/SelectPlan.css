@@ -143,6 +143,14 @@ background-color: black;
 .toggleSelected{
     display:inline;
     color:#022959;
+    font-family: "UbuntuBold";
+    font-size: 14px;
+    line-height: 1.5;
+}
+.togglebox{
+        background-color: #F8F9FF;
+        border-radius: 8px;
+        min-height: 5vh;
 }
 
 @media(max-width:1024px){
@@ -195,4 +203,55 @@ background-color: black;
     width: 348px;
     height: 430px;
 }
+}
+
+@media(max-width: 767px){
+    .mainplan{
+        /* max-width:85vw;
+        width:85vw; */
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        gap: 16px;
+    }
+    .planoptions{
+        max-width: 85vw;
+        width:85vw;
+        max-height: none;
+        min-height: 35vh;
+        height: 35vh;
+        justify-content: space-evenly;
+    }
+    .planoptions>div{
+        width: 80vw;
+        max-width: 85vw;
+        height: 10vh;
+        max-height: none;
+
+  
+    }
+    .toggleSelected{
+            font-family: "UbuntuMedium";
+    }
+    .toggle{
+            font-family: "UbuntuMedium";
+    }
+    .togglebox{
+        height:6vh;
+        text-align: center;
+        padding-top:5px;
+    }
+    .planoptions>div>img{
+        margin-top:auto;
+    }
+    .planoptions>div>span:nth-child(2) {
+        margin-top: 3vh;
+    }
+    .planoptions>div>span:nth-child(3){
+        margin-top:-2vh;
+    }
+    .selectplan>div:first-child {
+        font-size: 24px;
+    }
 }

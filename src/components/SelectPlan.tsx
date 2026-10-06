@@ -47,7 +47,7 @@ const SelectPlan = () => {
 
             </div>
 
-              <div className='toggle'>
+              <div className='togglebox'>
                <p className={isYearly?"toggle":"toggleSelected"}> Monthly </p>
                 <div className='switch'>
                     <input className='checkbox' type='checkbox' checked={isYearly} id="plan" onChange={e=>handleBillingCycle(e)}/>

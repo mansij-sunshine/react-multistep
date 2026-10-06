@@ -26,7 +26,7 @@ const Summary = () =>{
 
     return(
         <div>
-            <div className="title">
+            <div className="summarytitle">
                 <p>Finishing up</p>
                 <p>Double-check everything looks OK before confirming.</p>
             </div>

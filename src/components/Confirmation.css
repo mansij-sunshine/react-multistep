@@ -20,3 +20,20 @@
     line-height: 1.5;
     color: #9699AA;
 }
+
+@media(max-width:767px){
+    .confirmwrapper{
+        background-color: white;
+        max-height: 70vh;
+        border-radius: 10px;
+    }
+    .confirmation> p:first-of-type {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
+    .confirmation> p:nth-child(3) {
+        padding: 2px 10px;
+        width: 77vw;
+    }
+}

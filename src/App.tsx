@@ -7,6 +7,7 @@ import SelectPlan from './components/SelectPlan'
 import Summary from './components/Summary'
 import Confirmation from './components/Confirmation'
 import {UserContext} from './components/UserContext'
+import { Analytics } from "@vercel/analytics/react"
 
 import * as types from './components/types'
 
@@ -116,7 +117,7 @@ const [validationError, setValidationError] = useState<types.validationErrorType
               {stepperPoints.map(s=>{
                   return <div key={s.id}>
                     <div className= {s.id==stepNumber?"selectedStepper":"unselectedStepper"}>{s.id}</div>
-                    <div>
+                    <div className='step'>
                       <p>Step {s.id}</p>
                       <p>{s.description}</p>
                     </div>
@@ -147,6 +148,7 @@ const [validationError, setValidationError] = useState<types.validationErrorType
       </div>
       
      </div>
+     <Analytics/>
     </UserContext>
 
 

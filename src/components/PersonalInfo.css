@@ -64,33 +64,18 @@
 
 @media (max-width: 1024px) {
 
-    .personalinfo{
-  /* "Personal info" heading */
-    }
-    .personalinfo>div:nth-child(2){
-    
-    }
-
-    /* 24px gap between fields, inputs fill width */
-    .personaldetails{
-       
-    }
-    .personaldetails>input{
-  /* gap handles spacing now */
-    }
 }
 
 @media (max-width: 767px) {
-    .personalinfo{
-        
+.personaldetails>input{
+    width:80vw;
+    max-width:80vw;
+    height: 5vh;
+    max-height: 5vh;
+}
+
+    .personalinfo>div:first-child{
+         font-size:24px;
     }
-    .personalinfo>div:nth-child(2){
-        
-    }
-    .personaldetails{
-      
-    }
-    .personaldetails>input{
-        
-    }
+
 }
